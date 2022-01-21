@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation-bar{
+    background-color: red;
+    height: 84px;
+}
+
+/* Color scheme white and rgb(0, 199, 0) {light green} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/company-logo.png" type="image/x-icon">
+    <title>TB Grocery Store - The One Stop Solution for all grocery items</title>
+
+    <!-- Linking CSS File that will design navigation bar -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navigation-bar.css') }}">
+
+    <!-- Linking CSS File that will design the footer -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+</head>
+<body>
+
+    <nav class="navigation-bar">
+        <div class="company-info"></div>
+        <div class="search-box-section"></div>
+        <div class="auth-info"></div>
+        <!-- <div class="cart-account-info"></div> -->
+    </nav>
+
+    {% block body %}
+        
+    {% endblock body %}
+    <footer class="home-footer"></footer>
+</body>
+</html>
