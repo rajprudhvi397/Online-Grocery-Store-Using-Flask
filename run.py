@@ -6,7 +6,6 @@ features neeeded for the store to grow. '''
 ''' FILE DESCRIPTION : THIS IS THE MAIN FILE THAT RUNS THE PROJECT '''
 
 from views import createApp # Importing createApp from __init__.py file in views directory
-import os
 
 app = createApp() # Creating app using function createApp from __init__.py file in views directory
 

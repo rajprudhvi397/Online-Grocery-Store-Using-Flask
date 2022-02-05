@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,41 @@
     <link rel="shortcut icon" href="../static/img/company-logo.png" type="image/x-icon">
     <title>TB Grocery Store - The One Stop Solution for all grocery items</title>
 
+    <!-- Linking CSS File that will contain the styles common to whole website -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+
     <!-- Linking CSS File that will design navigation bar -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navigation-bar.css') }}">
 
     <!-- Linking CSS File that will design the footer -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 </head>
+
 <body>
 
     <nav class="navigation-bar">
-        <div class="company-info"></div>
-        <div class="search-box-section"></div>
-        <div class="auth-info"></div>
-        <!-- <div class="cart-account-info"></div> -->
+        <!-- <div class="company-info"></div> -->
+        <a href="/"><img src="../static/img/company-logo.png" class="company-logo"></a>
+        <form class="search-form">
+            <input type="search" name="search-input" id="search-input" placeholder="Search..." class="search-input">
+        </form>
+        <div class="navbar-img-parent">
+            <a href="/my-account">
+                <img src="../static/img/user.png" class="navbar-img">
+            </a>
+            <a href="/contact">
+                <img src="../static/img/contact.png" class="navbar-img">
+            </a>
+            <a href="/cart">
+                <img src="../static/img/shopping-cart.png" class="navbar-img">
+            </a>
+        </div>
     </nav>
 
     {% block body %}
-        
+
     {% endblock body %}
     <footer class="home-footer"></footer>
 </body>
+
 </html>
