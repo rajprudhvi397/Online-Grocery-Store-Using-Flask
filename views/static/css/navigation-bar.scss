@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
 .navigation-bar{
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2vh 1.2vw;
+    transition: all 0.2s ease;
+}
+
+.visibility-resp{
+    transition: opacity 0.2s ease-out;
+}
+
+.company-logo-anchor{
+    align-self: flex-start;
+    transition: all 3s ease;
+}
+
+.navbar-img-parent{
+    display: flex;
+}
+
+.navbar-img-info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navabr-img-name{
+    white-space: nowrap;
+    font-family: 'Rowdies', cursive;
 }
 
 .navbar-img{
@@ -18,7 +46,7 @@
 
 .search-input{
     width: 40vw;
-    height: 10vh;
+    height: 4.2rem;
     border: none;
     padding: 1.2vh 1.2vw;
     padding-left: 3.4vw;
@@ -27,7 +55,7 @@
     border-radius: 12px;
     background-image: url('../img/search.png');
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 2vw 4.8vh;
     background-position: 2% 50%;
 }
 
@@ -38,4 +66,18 @@
 .navbar-img-parent > *{
     padding-left: 1.3vw;
     padding-right: 1.3vw;
+}
+
+.hamburger{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    display: none;
+}
+
+.line{
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    margin-bottom: 5px;
 }

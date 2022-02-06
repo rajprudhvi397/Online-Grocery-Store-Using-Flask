@@ -16,26 +16,43 @@
 
     <!-- Linking CSS File that will design the footer -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+
+    <!-- Linking CSS File that will make the navigation bar responsive -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive/navigation-bar.css') }}">
 </head>
 
 <body>
 
-    <nav class="navigation-bar">
+    <nav class="navigation-bar h-resp">
         <!-- <div class="company-info"></div> -->
-        <a href="/"><img src="../static/img/company-logo.png" class="company-logo"></a>
-        <form class="search-form">
+        <a href="/" class="company-logo-anchor"><img src="../static/img/company-logo.png" class="company-logo"></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <form class="search-form visibility-resp v-resp">
             <input type="search" name="search-input" id="search-input" placeholder="Search..." class="search-input">
         </form>
-        <div class="navbar-img-parent">
-            <a href="/my-account">
-                <img src="../static/img/user.png" class="navbar-img">
-            </a>
-            <a href="/contact">
-                <img src="../static/img/contact.png" class="navbar-img">
-            </a>
-            <a href="/cart">
-                <img src="../static/img/shopping-cart.png" class="navbar-img">
-            </a>
+        <div class="navbar-img-parent visibility-resp v-resp">
+            <div class="my-account-info navbar-img-info-div">
+                <a href="/my-account">
+                    <img src="../static/img/user.png" class="navbar-img">
+                </a>
+                <span class="navabr-img-name">My Account</span>
+            </div>
+            <div class="contact-info navbar-img-info-div">
+                <a href="/contact">
+                    <img src="../static/img/contact.png" class="navbar-img">
+                </a>
+                <span class="navabr-img-name">Contact Us</span>
+            </div>
+            <div class="cart-info navbar-img-info-div">
+                <a href="/cart">
+                    <img src="../static/img/shopping-cart.png" class="navbar-img">
+                </a>
+                <span class="navabr-img-name">My Cart</span>
+            </div>
         </div>
     </nav>
 
@@ -44,5 +61,5 @@
     {% endblock body %}
     <footer class="home-footer"></footer>
 </body>
-
+<script src="{{ url_for('static', filename='js/responsive-navigation-bar.js') }}"></script>
 </html>

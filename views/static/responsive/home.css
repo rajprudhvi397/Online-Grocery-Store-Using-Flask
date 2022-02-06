@@ -1,0 +1,18 @@
+@media only screen and (max-width: 979px) {
+  .company-name {
+    font-size: 2rem;
+  }
+  .company-slogan {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  .company-name {
+    font-size: 1.2rem;
+  }
+  .company-slogan {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

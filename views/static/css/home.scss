@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+.main-background-section{
+    background-image: url('../img/grocery-items-main-background-image.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    max-width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+$mainBackgroundAreaFontColor : #1022f7;
+
+.company-name{
+    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    color: $mainBackgroundAreaFontColor;
+}
+
+.company-slogan{
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    color: $mainBackgroundAreaFontColor;
+}

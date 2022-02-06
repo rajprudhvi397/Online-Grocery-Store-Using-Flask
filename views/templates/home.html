@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <div class="categories-section-home"></div>
-    <div class="products-home"></div>
+    <!-- This file will design the home page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+    <!-- This file will make the home page responsive -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive/home.css') }}">
+
+    <div class="main-background-section">
+        <h1 class="company-name">TB Kirana Stores</h1>
+        <h4 class="company-slogan">The ultimate station for all grocery related items</h4>
+    </div>
 {% endblock body %}
