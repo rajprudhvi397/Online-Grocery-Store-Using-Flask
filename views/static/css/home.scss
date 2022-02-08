@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import 'colorcode';
 
 .main-background-section{
     background-image: url('../img/grocery-items-main-background-image.jpg');
@@ -25,4 +26,69 @@ $mainBackgroundAreaFontColor : #1022f7;
     font-size: 3rem;
     font-family: 'Merriweather', serif;
     color: $mainBackgroundAreaFontColor;
+}
+
+// .category-section{
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.category-info-and-all-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.category-name{
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.see-all{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 3vh;
+    // align-self: flex-end;
+}
+
+.products-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    border: 1px solid black;
+    padding: 1.2vh 1.2vw;
+    border-radius: 12px;
+}
+
+.product-img{
+    height: 50vh;
+    width: 25vw;
+}
+
+.product-name-anchor{
+    text-decoration: none;
+    color: black;
+}
+.product-name-anchor:hover{
+    color: $mainTextColorOfWebsite;
+}
+
+.product-name{
+    font-family: 'Merriweather', serif;
+}
+
+.price{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.add-to-cart{
+    align-self: center;
 }

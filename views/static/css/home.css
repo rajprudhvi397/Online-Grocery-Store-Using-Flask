@@ -32,4 +32,84 @@
   font-family: 'Merriweather', serif;
   color: #1022f7;
 }
+
+.category-info-and-all-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+}
+
+.category-name {
+  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+}
+
+.see-all {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 3vh;
+}
+
+.products-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5vh;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25vw;
+  border: 1px solid black;
+  padding: 1.2vh 1.2vw;
+  border-radius: 12px;
+}
+
+.product-img {
+  height: 50vh;
+  width: 25vw;
+}
+
+.product-name-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.product-name-anchor:hover {
+  color: #0cf00c;
+}
+
+.product-name {
+  font-family: 'Merriweather', serif;
+}
+
+.price {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.add-to-cart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=home.css.map */

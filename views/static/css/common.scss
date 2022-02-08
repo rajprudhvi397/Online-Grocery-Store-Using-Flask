@@ -1,9 +1,30 @@
+@import 'colorcode';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(233, 233, 233);
-    // overflow-x: hidden;
+::selection{
+    background: $mainTextColorOfWebsite;
+    color: white;
+}
+
+.btn{
+    width: 11vw;
+    background-color: $mainTextColorOfWebsite;
+    border: none;
+    padding: 1.2vh 1.2vw;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.12rem;
+}
+
+.btn:hover{
+    background-color: white;
+    color: $mainTextColorOfWebsite;
+    border: 1px solid $mainTextColorOfWebsite;
+    cursor: pointer;
 }
