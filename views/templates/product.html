@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design the home page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/product.css') }}">
+
+<!-- This file will make the home page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/product.css') }}">
+
+<div class="product">
+    <h1 class="product-name">Pepsi Cold Drink Can</h1>
+    <div class="product-info-parent">
+        <img src="../static/img/product-img.jpg" class="product-img">
+        <div class="product-info">
+            <span class="price">Rs. 45/-</span>
+            <div class="add-items-section">
+                <div class="minus-section change-quantity-section">
+                    -
+                </div>
+                <div class="quantity-count">
+                    1
+                </div>
+                <div class="plus-section change-quantity-section">
+                    +
+                </div>
+            </div>
+            <button class="btn">Add to cart</button>
+        </div>
+    </div>
+</div>
+<div class="product-description"></div>
+
+<script src="{{ url_for('static', filename='js/product.js') }}"></script>
+
+{% endblock body %}

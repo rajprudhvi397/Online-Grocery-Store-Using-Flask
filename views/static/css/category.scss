@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import '_colorcode';
+
+.category-name{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2.1vh;
+}
+
+.products-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.1vh;
+}
+
+.product{
+    display: flex;
+    width: 85vw;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 4.2vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.4vh 2.4vw;
+}
+
+.product-img{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 12px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1.2vw;
+}
+
+.product-name-anchor{
+    text-decoration: none;
+    color: black;
+}
+.product-name-anchor:hover{
+    color: $mainTextColorOfWebsite;
+}
+
+.product-name{
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+}
+
+.price{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+}
+
+// .add-to-cart{
+//     align-self: flex-end;
+// }

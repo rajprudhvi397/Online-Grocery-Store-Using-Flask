@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,eAAe,CAAA;EACX,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,GAAG;EACf,WAAW,EAAE,KAAK;EAClB,cAAc,EAAE,KAAK;EACrB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,MAAM;CAMpB",
     "sources": [
-        "footer.scss"
+        "footer.scss",
+        "_colorcode.scss"
     ],
     "names": [],
     "file": "footer.css"

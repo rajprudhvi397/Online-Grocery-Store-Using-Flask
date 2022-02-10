@@ -3,6 +3,7 @@ FILE DESCRIPTION : THIS IS A VERY IMPORTANT FILE THAT WILL CREATE DATABASE, CONN
 REGISTER BLUEPRINTS AND MUCH MORE WHICH IS A CRUCIAL PART TO MAKE THE WEBSITE
 '''
 
+from math import prod
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path # Importing Path from os module to check path of database
@@ -21,7 +22,15 @@ def createApp():
 
     from .home import home # Importing home from home.py which will help us to adress the '/' route of the website
 
+    from .category import category
+
+    from .product import product
+
     app.register_blueprint(home,url_prefix='/') # Registering Blueprint so that all '/' requests are redirected to code of home.py
+
+    app.register_blueprint(category,url_prefix='/category') # Register blueprint to access /category route of the website
+
+    app.register_blueprint(product,url_prefix='/product') # Register blueprint to access /product route of the website 
 
     createDatabase(app) # Running createDatabase function to create database if it doesn't exists
 

@@ -1,0 +1,27 @@
+@media only screen and (max-width: 530px) {
+    .product{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img{
+        height: 80vw;
+        width: 80vw;
+    }
+
+    .btn{
+        margin-top: 4vw;
+    }
+
+    .product-info{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1128px) {
+    .btn{
+        width: 35vw;
+    }
+}

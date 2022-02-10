@@ -11,6 +11,11 @@
     color: white;
 }
 
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+
 .btn{
     width: 11vw;
     background-color: $mainTextColorOfWebsite;
@@ -20,11 +25,10 @@
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.12rem;
+    border: 1px solid $mainTextColorOfWebsite;
+    cursor: pointer;
 }
 
 .btn:hover{
-    background-color: white;
-    color: $mainTextColorOfWebsite;
-    border: 1px solid $mainTextColorOfWebsite;
-    cursor: pointer;
+    opacity: 0.6;
 }

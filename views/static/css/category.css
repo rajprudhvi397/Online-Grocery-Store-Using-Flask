@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+.category-name {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2.1vh;
+}
+
+.products-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.1vh;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85vw;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 4.2vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.4vh 2.4vw;
+}
+
+.product-img {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 12px;
+}
+
+.product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 1.2vw;
+}
+
+.product-name-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.product-name-anchor:hover {
+  color: #0cf00c;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  font-family: 'Merriweather', serif;
+}
+
+.price {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=category.css.map */

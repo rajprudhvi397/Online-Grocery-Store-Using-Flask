@@ -1,0 +1,57 @@
+@import '_colorcode';
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 110vh;
+    background-color: white;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.product-name{
+    text-align: center;
+}
+
+.product-info-parent{
+    display: flex;
+    // justify-content: center;S
+    
+}
+
+.product-img{
+    width: 20vw;
+    height: 20vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.add-items-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-quantity-section{
+    width: 80px;
+    border-radius: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+.change-quantity-section:hover{
+    color: $mainTextColorOfWebsite;
+    font-weight: bolder;
+}
+
+.quantity-count{
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+}

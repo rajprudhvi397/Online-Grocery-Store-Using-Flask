@@ -14,6 +14,10 @@
   color: white;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 .btn {
   width: 11vw;
   background-color: #0cf00c;
@@ -23,12 +27,11 @@
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.12rem;
+  border: 1px solid #0cf00c;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background-color: white;
-  color: #0cf00c;
-  border: 1px solid #0cf00c;
-  cursor: pointer;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=common.css.map */
