@@ -1,14 +1,13 @@
-let minusButton = document.getElementsByClassName('minus-section')[0];
-let plusButton = document.getElementsByClassName('plus-section')[0];
-let quantityCountSection = document.getElementsByClassName('quantity-count')[0];
-let quantityValue = parseInt(quantityCountSection.innerHTML);
+let minusButton = document.getElementById('minus-button');
+let plusButton = document.getElementById('plus-button');
+let quantityCountSection = document.getElementById('quantityCountSection');
 
 minusButton.addEventListener('click',()=>{
-    console.log(quantityValue);
-    quantityCountSection.textContent = quantityValue - 1;
+    if (quantityCountSection.innerText != 1) {
+        quantityCountSection.innerText = parseInt(quantityCountSection.innerText) - 1
+    }
 });
 
 plusButton.addEventListener('click',()=>{
-    console.log(quantityValue);
-    quantityCountSection.textContent = quantityValue + 1;
+    quantityCountSection.innerText = parseInt(quantityCountSection.innerText) + 1
 });

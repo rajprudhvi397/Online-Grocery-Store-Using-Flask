@@ -1,31 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for product name */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for price */
 @import '_colorcode';
 
 .product{
     display: flex;
     flex-direction: column;
     width: 85vw;
-    height: 110vh;
+    height: inherit;
     background-color: white;
     border-radius: 12px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 10vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .product-name{
     text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 
 .product-info-parent{
     display: flex;
-    // justify-content: center;S
-    
+    margin-top: 7vh;
 }
 
 .product-img{
-    width: 20vw;
-    height: 20vw;
-    margin-right: 10vw;
+    width: 35vw;
+    height: 35vw;
+    margin-right: 5vw;
     margin-left: 10vw;
+    border-radius: 12px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+}
+
+.price{
+    margin-bottom: 1.2vh;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.btn{
+    margin-top: 1.6vh;
 }
 
 .add-items-section{

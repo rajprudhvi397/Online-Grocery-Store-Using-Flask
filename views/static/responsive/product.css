@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=product.css.map */
+@media only screen and (max-width: 1080px) {
+  .btn {
+    width: 17vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .btn {
+    width: 24vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 543px) {
+  .product-img {
+    width: 70vw;
+    height: 70vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .product-info-parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .product-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .product-info-parent {
+    margin-top: 2vh;
+  }
+}
+/*# sourceMappingURL=product.css.map */
