@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/img/company-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/company-logo.png') }}" type="image/x-icon">
     <title>TB Grocery Store - The One Stop Solution for all grocery items</title>
+
+    <!-- Linking CSS File to add Javascript Plugin 'aos' in website -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Linking CSS File that will contain the styles common to whole website -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
@@ -36,20 +39,20 @@
         </form>
         <div class="navbar-img-parent visibility-resp v-resp">
             <div class="my-account-info navbar-img-info-div">
-                <a href="/my-account">
-                    <img src="../static/img/user.png" class="navbar-img">
+                <a href="/account">
+                    <img src="{{ url_for('static', filename='img/user.png') }}" class="navbar-img">
                 </a>
                 <span class="navabr-img-name">My Account</span>
             </div>
             <div class="contact-info navbar-img-info-div">
                 <a href="/contact">
-                    <img src="../static/img/contact.png" class="navbar-img">
+                    <img src="{{ url_for('static', filename='img/contact.png') }}" class="navbar-img">
                 </a>
                 <span class="navabr-img-name">Contact Us</span>
             </div>
             <div class="cart-info navbar-img-info-div">
                 <a href="/cart">
-                    <img src="../static/img/shopping-cart.png" class="navbar-img">
+                    <img src="{{ url_for('static', filename='img/shopping-cart.png') }}" class="navbar-img">
                 </a>
                 <span class="navabr-img-name">My Cart</span>
             </div>
@@ -63,5 +66,16 @@
         Copyright 2022 | TB Grocery Store
     </footer>
 </body>
+
+<!-- Linking JS File to add Javascript Plugin 'aos' in website -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 300,
+    duration: 1500
+  });
+
+</script>
+
 <script src="{{ url_for('static', filename='js/responsive-navigation-bar.js') }}"></script>
 </html>

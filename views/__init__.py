@@ -26,11 +26,15 @@ def createApp():
 
     from .product import product
 
+    from .account import account
+
     app.register_blueprint(home,url_prefix='/') # Registering Blueprint so that all '/' requests are redirected to code of home.py
 
     app.register_blueprint(category,url_prefix='/category') # Register blueprint to access /category route of the website
 
-    app.register_blueprint(product,url_prefix='/product') # Register blueprint to access /product route of the website 
+    app.register_blueprint(product,url_prefix='/product') # Register blueprint to access /product route of the website
+
+    app.register_blueprint(account,url_prefix='/account') # Register blueprint to access /account route of the website 
 
     createDatabase(app) # Running createDatabase function to create database if it doesn't exists
 

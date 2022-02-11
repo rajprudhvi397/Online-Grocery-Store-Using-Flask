@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design the home page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/account.css') }}">
+
+<!-- This file will make the home page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/account.css') }}">
+
+<h1 class="greeting">
+    Hello 👋, Demo user
+</h1>
+
+<div class="account-buttons-parent">
+    <a class="edit-profile-button account-button">Edit Profile</a>
+    <a href="/orders" class="orders-button account-button">Your Orders</a>
+    <a href="/addresses" class="addresses-button account-button"> Your Addresses </a>
+</div>
+
+<div class="edit-profile-modal hide-modal">
+    <h2 class="edit-profile-message">
+        Edit Profile
+    </h2>
+    <form class="edit-profile-form" method="post">
+        <div class="input-group-edit-profile">
+            <label for="edit-name-input" class="edit-name-label edit-profile-label">Name</label>
+            <input type="text" name="name" placeholder="Your new name" id="edit-name-input" class="edit-profile-input">
+        </div>
+        <div class="input-group-edit-profile">
+            <label for="edit-email-input" class="edit-email-label edit-profile-label">Email</label>
+            <input type="email" name="email" placeholder="Your new Email" id="edit-email-input" class="edit-profile-input">
+        </div>
+        <div class="input-group-edit-profile">
+            <label for="edit-password-input" class="edit-password-label edit-profile-label">Password</label>
+            <input type="password" name="password" placeholder="Your new Password" id="edit-password-input" class="edit-profile-input">
+        </div>
+        <div class="input-group-edit-profile">
+            <label for="edit-confirm-password-input" class="edit-confirm-password-label edit-profile-label">Confirm Password</label>
+            <input type="password" name="confirm-password" placeholder="Please Confirm your Password" id="edit-confirm-password-input" class="edit-profile-input">
+        </div>
+        <button type="submit" class="edit-profile-submit-button">Save Changes</button>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='js/account.js') }}"></script>
+
+{% endblock body %}
