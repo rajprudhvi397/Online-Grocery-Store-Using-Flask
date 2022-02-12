@@ -6,7 +6,7 @@
   left: 0;
   width: 50vw;
   opacity: 1;
-  height: 40vw;
+  height: 88vh;
   margin: auto;
   background-color: white;
   display: -webkit-box;
@@ -72,7 +72,7 @@
   border-radius: 5px;
 }
 
-.form-input-text:focus {
+.form-input-text-password:focus {
   outline: none;
 }
 

@@ -1,0 +1,57 @@
+@media only screen and (max-width: 950px) {
+    .form-message{
+        font-size: 1.5rem;
+    }
+
+    .input-group{
+        font-size: 1rem;
+    }
+
+    .form-label{
+        font-size: 1rem;
+    }
+
+    .form-submit-button{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form-modal{
+        width: 70vw;
+    }
+
+    .input-group{
+        width: 60vw;
+    }
+
+    .form-submit-button{
+        width: 40vw;
+        height: 5vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .form-modal{
+        height: 60vh;
+        width: 90vw;
+    }
+
+    .input-group{
+        width: 80vw;
+    }
+
+    .form-label{
+        font-size: 1rem;
+    }
+
+    .form-input-text-password{
+        width: 80vw;
+        height: 3vh;
+        font-size: 1rem;
+    }
+
+    .form-message{
+        margin-bottom: 0.5vh;
+    }
+}
