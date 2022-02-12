@@ -22,6 +22,12 @@
 
     <!-- Linking CSS File that will make the navigation bar responsive -->
     <link rel="stylesheet" href="{{ url_for('static', filename='responsive/navigation-bar.css') }}">
+
+    <!-- Linkig the file that will design all the forms of entire website -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+
+    <!-- Linkig the file that will make all the forms of the website responsive -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive/form.css') }}">
 </head>
 
 <body>
@@ -78,4 +84,7 @@
 </script>
 
 <script src="{{ url_for('static', filename='js/responsive-navigation-bar.js') }}"></script>
+
+<!-- Linking the Js file that will add effect of showing modal when clicked on necessary button -->
+<script src="{{ url_for('static', filename='js/form-modal.js') }}"></script>
 </html>

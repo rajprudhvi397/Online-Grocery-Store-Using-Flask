@@ -3,7 +3,7 @@ FILE DESCRIPTION : THIS IS A VERY IMPORTANT FILE THAT WILL CREATE DATABASE, CONN
 REGISTER BLUEPRINTS AND MUCH MORE WHICH IS A CRUCIAL PART TO MAKE THE WEBSITE
 '''
 
-from math import prod
+# from math import prod
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path # Importing Path from os module to check path of database

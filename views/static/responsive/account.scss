@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1120px) {
+    .account-button{
+        font-size: 1.08rem;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .account-button{
+        font-size: 0.7rem;
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .account-buttons-parent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .greeting{
+        font-size: 2rem;
+    }
+
+    .account-button{
+        width: 50vw;
+        margin-bottom: 3vh;
+        height: 12vh;
+    }
+
+    .website-footer{
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .greeting{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    .greeting{
+        font-size: 1rem;
+    }
+}
