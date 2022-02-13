@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/orders.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/orders.css') }}">
+
+<h1 class="page-title">
+    Your Orders are here 👇
+</h1>
+
+<table class="orders-table">
+    <thead>
+        <tr class="orders-table-th-parent">
+            <th>Order</th>
+            <th>Date</th>
+            <th>Total Cost</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="orders-table-td-parent">
+            <td>#112</td>
+            <td>55-04-2157</td>
+            <td>Rs. 1049 for 2 items</td>
+            <td>
+                <a href="/view-order/sjklfkjlsfd" class="view-order-btn">View Order</a>
+            </td>
+        </tr>
+
+        <tr class="orders-table-td-parent">
+            <td>#112</td>
+            <td>55-04-2157</td>
+            <td>Rs. 1049 for 2 items</td>
+            <td>
+                <a href="/view-order/sjklfkjlsfd" class="view-order-btn">View Order</a>
+            </td>
+        </tr>
+
+        <tr class="orders-table-td-parent">
+            <td>#112</td>
+            <td>55-04-2157</td>
+            <td>Rs. 1049 for 2 items</td>
+            <td>
+                <a href="/view-order/sjklfkjlsfd" class="view-order-btn">View Order</a>
+            </td>
+        </tr>
+
+        <tr class="orders-table-td-parent">
+            <td>#112</td>
+            <td>55-04-2157</td>
+            <td>Rs. 1049 for 2 items</td>
+            <td>
+                <a href="/view-order/sjklfkjlsfd" class="view-order-btn">View Order</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock body %}

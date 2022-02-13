@@ -34,7 +34,7 @@
 
     <nav class="navigation-bar h-resp">
         <!-- <div class="company-info"></div> -->
-        <a href="/" class="company-logo-anchor"><img src="../static/img/company-logo.png" class="company-logo"></a>
+        <a href="/" class="company-logo-anchor"><img src="{{ url_for('static', filename='img/company-logo.png') }}" class="company-logo"></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -49,12 +49,6 @@
                     <img src="{{ url_for('static', filename='img/user.png') }}" class="navbar-img">
                 </a>
                 <span class="navabr-img-name">My Account</span>
-            </div>
-            <div class="contact-info navbar-img-info-div">
-                <a href="/contact">
-                    <img src="{{ url_for('static', filename='img/contact.png') }}" class="navbar-img">
-                </a>
-                <span class="navabr-img-name">Contact Us</span>
             </div>
             <div class="cart-info navbar-img-info-div">
                 <a href="/cart">

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+    .page-title{
+        font-size: 2rem;
+    }
+
+    .orders-table{
+        width: 90vw;
+    }
+
+    .orders-table-th-parent th{
+        font-size: 1rem;
+    }
+    .orders-table-td-parent td{
+        font-size: 0.7rem;
+    }
+}
