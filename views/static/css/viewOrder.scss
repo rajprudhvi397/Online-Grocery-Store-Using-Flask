@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for Order Number */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for cells and heading of table and date details of order */
+
+.order-number{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.order-date-detail{
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.order-details-table{
+    width: 80vw;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    margin-bottom: 3vh;
+}
+
+.order-table-th-td-elements{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.darker-background-td-elements{
+    background-color: rgb(117, 117, 117);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.adress-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.adress-title-parent{
+    font-size: 1.5rem;
+}
+
+.main-adress{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bill-buttons-parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.bill-buttons{
+    width: 30vw;
+    height: 5vw;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.1vw;
+    padding-right: 2.1vw;
+    font-size: 1.3rem;
+}
+
+.view-bill-button{
+    background-color: rgb(255, 88, 88);
+}
+
+.downlaod-bill-button{
+    background-color: rgb(78, 78, 187);
+}

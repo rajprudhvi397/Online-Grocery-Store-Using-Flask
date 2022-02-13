@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .bill-buttons-parent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bill-buttons{
+        width: 60vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+    }
+}

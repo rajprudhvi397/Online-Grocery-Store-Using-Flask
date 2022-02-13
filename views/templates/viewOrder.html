@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/viewOrder.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/viewOrder.css') }}">
+
+<h1 class="order-number">Order #112</h1>
+
+<h3 class="order-date-detail">
+    This order was placed on 55 April 2157
+</h3>
+
+<table class="order-details-table">
+    <thead>
+        <tr>
+            <th class="darker-background-td-elements order-table-th-td-elements">Product</th>
+            <th class='darker-background-td-elements order-table-th-td-elements'>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="darker-background-td-elements order-table-th-td-elements">Pepsi Cold Drink Can</td>
+            <td class="lighter-background-td-elements order-table-th-td-elements">Rs. 150</td>
+        </tr>
+        <tr>
+            <td class="darker-background-td-elements order-table-th-td-elements">No. of Items</td>
+            <td class="lighter-background-td-elements order-table-th-td-elements">2</td>
+        </tr>
+        <tr>
+            <td class="darker-background-td-elements order-table-th-td-elements">Payment Method</td>
+            <td class="lighter-background-td-elements order-table-th-td-elements">BHIM UPI</td>
+        </tr>
+        <tr>
+            <td class="darker-background-td-elements order-table-th-td-elements">Total</td>
+            <td class="lighter-background-td-elements order-table-th-td-elements">Rs. 300</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="adress-info">
+    <div class="adress-title-parent">
+        <h3>Billing Adress</h3>
+        <hr>
+    </div>
+    <div class="main-adress">
+        <div class="user-real-name-of-adress adress-info-div">
+            Demo User
+        </div>
+        <div class="house-number adress-info-div">
+            Flat no. 84
+        </div>
+        <div class="residence-name adress-info-div">
+            Some Residence
+        </div>
+        <div class="city-pincode-info adress-info-div">
+            Random City, 0000000
+        </div>
+        <div class="state-country-info adress-info-div">
+            State, Country
+        </div>
+        <div class="mobile-number adress-info-div">
+            +0000000000000
+        </div>
+    </div>
+</div>
+
+<div class="bill-buttons-parent">
+    <a class="bill-buttons view-bill-button">View Bill</a>
+    <a class="bill-buttons downlaod-bill-button">Download Bill</a>
+</div>
+
+{% endblock body %}
