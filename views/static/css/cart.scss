@@ -1,0 +1,74 @@
+@import '_colorcode';
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for Page title */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for cells and heading of table */
+
+.cart-message{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.cart-table{
+    width: 80vw;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    margin-bottom: 3vh;
+}
+
+.dark-background{
+    background-color: rgb(117, 117, 117);
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: center;
+}
+
+.cart-items-column{
+    border-bottom: 1px solid black;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.product-img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.product-name-anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.add-items-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-quantity-section{
+    width: 20px;
+    border-radius: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+.change-quantity-section:hover{
+    color: $mainTextColorOfWebsite;
+    font-weight: bolder;
+}
+
+.quantity-count{
+    margin-right: 0.2vw;
+    margin-left: 0.2vw;
+}

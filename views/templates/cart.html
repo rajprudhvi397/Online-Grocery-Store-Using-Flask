@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/cart.css') }}">
+
+<h1 class="cart-message">
+    Your Cart 🛒
+</h1>
+
+<table class="cart-table">
+    <thead class="dark-background">
+        <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Items</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="cart-items-column">
+            <td>
+                <a href="/product/askfjl">
+                    <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+                </a>
+            </td>
+            <td>
+                <a href="/product/askfjl" class="product-name-anchor">
+                    Pepsi cold drink can
+                </a>
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="add-items-section">
+                <div class="minus-section change-quantity-section" id="minus-button">
+                    -
+                </div>
+                <div class="quantity-count" id="quantityCountSection">
+                    1
+                </div>
+                <div class="plus-section change-quantity-section" id="plus-button">
+                    +
+                </div>
+            </td>
+            <td>
+                Rs. 150
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock body %}
