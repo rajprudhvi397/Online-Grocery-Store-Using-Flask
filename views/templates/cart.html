@@ -15,11 +15,12 @@
 <table class="cart-table">
     <thead class="dark-background">
         <tr>
-            <th></th>
+            <th class="product-img-row-th"></th>
             <th>Product</th>
             <th>Price</th>
             <th>Items</th>
             <th>Total</th>
+            <th class="remove-item-row-th"></th>
         </tr>
     </thead>
     <tbody>
@@ -37,22 +38,107 @@
             <td>
                 Rs. 150
             </td>
-            <td class="add-items-section">
-                <div class="minus-section change-quantity-section" id="minus-button">
-                    -
-                </div>
-                <div class="quantity-count" id="quantityCountSection">
-                    1
-                </div>
-                <div class="plus-section change-quantity-section" id="plus-button">
-                    +
-                </div>
+            <td class="change-items-section">
+                <input type="number" name="change-quantity-input" class="change-quantity-input" value="1">
             </td>
             <td>
                 Rs. 150
             </td>
+            <td class="remove-item-icon-td">
+                <img src="{{ url_for('static', filename='img/cancel.png') }}" class="remove-item-icon">
+            </td>
+        </tr>
+
+        <tr class="cart-items-column">
+            <td>
+                <a href="/product/askfjl">
+                    <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+                </a>
+            </td>
+            <td>
+                <a href="/product/askfjl" class="product-name-anchor">
+                    Pepsi cold drink can
+                </a>
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="change-items-section">
+                <input type="number" name="change-quantity-input" class="change-quantity-input" value="1">
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="remove-item-icon-td">
+                <img src="{{ url_for('static', filename='img/cancel.png') }}" class="remove-item-icon">
+            </td>
+        </tr>
+
+        <tr class="cart-items-column">
+            <td>
+                <a href="/product/askfjl">
+                    <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+                </a>
+            </td>
+            <td>
+                <a href="/product/askfjl" class="product-name-anchor">
+                    Pepsi cold drink can
+                </a>
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="change-items-section">
+                <input type="number" name="change-quantity-input" class="change-quantity-input" value="1">
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="remove-item-icon-td">
+                <img src="{{ url_for('static', filename='img/cancel.png') }}" class="remove-item-icon">
+            </td>
+        </tr>
+
+        <tr class="cart-items-column">
+            <td>
+                <a href="/product/askfjl">
+                    <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+                </a>
+            </td>
+            <td>
+                <a href="/product/askfjl" class="product-name-anchor">
+                    Pepsi cold drink can
+                </a>
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="change-items-section">
+                <input type="number" name="change-quantity-input" class="change-quantity-input" value="1">
+            </td>
+            <td>
+                Rs. 150
+            </td>
+            <td class="remove-item-icon-td">
+                <img src="{{ url_for('static', filename='img/cancel.png') }}" class="remove-item-icon">
+            </td>
         </tr>
     </tbody>
 </table>
+
+<div class="cart-totals-div">
+    <h3 class="cart-totals-message">
+        Cart Totals
+    </h3>
+    <div class="total-price-div">
+        <h4>
+            Total Price:
+        </h4>
+        <h4>
+            Rs. 2100
+        </h4>
+    </div>
+    <a href="/checkout" class="checkout-button">Proceed to checkout</a>
+</div>
 
 {% endblock body %}

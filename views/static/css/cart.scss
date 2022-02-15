@@ -26,13 +26,20 @@
     color: white;
     font-family: 'Baloo Bhaijaan 2', cursive;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .cart-items-column{
     border-bottom: 1px solid black;
     font-family: 'Baloo Bhaijaan 2', cursive;
     text-align: center;
-    margin-top: 2vh;
+    font-size: 1.3rem;
+    transition: background-color 0.7s ease-in-out;
+}
+
+.cart-items-column:hover{
+    background-color: rgb(187, 187, 187);
+    cursor: pointer;
 }
 
 .product-img{
@@ -45,30 +52,88 @@
     color: black;
 }
 
-.add-items-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.change-quantity-section{
-    width: 20px;
-    border-radius: 10px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    cursor: pointer;
-    background-color: rgb(240, 240, 240);
-}
-
-.change-quantity-section:hover{
+.product-name-anchor:hover{
     color: $mainTextColorOfWebsite;
-    font-weight: bolder;
 }
 
-.quantity-count{
-    margin-right: 0.2vw;
-    margin-left: 0.2vw;
+.change-quantity-input{
+    border: none;
+    background-color: transparent;
+    // background-color: rgb(240, 240, 240);
+    width: 3vw;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.change-quantity-input:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+.remove-item-icon{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+/* Checkout Box Designing */
+
+.cart-totals-div{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: 1.5px solid rgb(255, 88, 88);
+    padding: 2vh 2vw;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vh auto;
+    transition: background-color 0.7s ease-in-out;
+}
+
+.cart-totals-div:hover{
+    background-color: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+.cart-totals-message{
+    font-size: 1.6rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+}
+
+.total-price-div{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin-top: 3vh;
+}
+
+.total-price-div h4{
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.checkout-button{
+    width: 25vw;
+    height: 3rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.1vw;
+    padding-right: 2.1vw;
+    font-size: 1.3rem;
+    margin-top: 3vh;
+    background-color: rgb(255, 88, 88);
+}
+
+.checkout-button:hover{
+    opacity: 0.4;
 }

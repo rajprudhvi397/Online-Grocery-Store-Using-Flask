@@ -1,0 +1,66 @@
+@media only screen and (max-width: 800px) {
+    .cart-totals-div{
+        width: 50vw;
+    }
+
+    .total-price-div{
+        width: 40vw;
+    }
+
+    .checkout-button{
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .cart-totals-div{
+        width: 60vw;
+    }
+
+    .total-price-div{
+        width: 50vw;
+    }
+
+    .checkout-button{
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cart-totals-div{
+        width: 80vw;
+    }
+
+    .total-price-div{
+        width: 70vw;
+    }
+
+    .checkout-button{
+        width: 70vw;
+    }
+}
+
+/* From here we will start making the cart table responsive */
+@media only screen and (max-width: 680px) {
+    .cart-items-column{
+        font-size: 0.7rem;
+    }
+
+    .dark-background{
+        font-size: 1rem;
+    }
+
+    .product-img{
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .remove-item-icon-td{
+        width: 10vw;
+    }
+
+    .remove-item-icon{
+        width: 3vw;
+        height: 3vw;
+    }
+}
