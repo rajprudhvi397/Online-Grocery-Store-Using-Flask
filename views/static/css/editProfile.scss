@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for greeting */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for buttons */
+
+.page-title{
+    text-align: center;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70vw;
+    padding: 2vh 2vw;
+    background-color: white;
+    margin: 3vh auto;
+    border-radius: 12px;
+}
+
+.input-group{
+    width: 60vw;
+}
+
+// .input-group input{
+//     // background-color: white;
+// }
