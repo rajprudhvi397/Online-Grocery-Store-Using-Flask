@@ -36,6 +36,8 @@ def createApp():
 
     from .editProfile import editProfile
 
+    from .checkout import checkout
+
     app.register_blueprint(home,url_prefix='/') # Registering Blueprint so that all '/' requests are redirected to code of home.py
 
     app.register_blueprint(category,url_prefix='/category') # Register blueprint to access /category route of the website
@@ -51,6 +53,8 @@ def createApp():
     app.register_blueprint(cart,url_prefix='/cart') # Register blueprint to access /cart route of the website
 
     app.register_blueprint(editProfile,url_prefix='/editProfile') # Register blueprint to access /editProfile route of the website
+
+    app.register_blueprint(checkout,url_prefix='/checkout') # Register blueprint to access /checkout route of the website
 
     createDatabase(app) # Running createDatabase function to create database if it doesn't exists
 

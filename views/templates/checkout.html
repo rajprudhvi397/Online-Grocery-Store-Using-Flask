@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/checkout.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/checkout.css') }}">
+
+<h1 class="page-message">Checkout Here 👇</h1>
+
+<form method="post" class="checkout-form">
+    <div class="payment-mode-div">
+        <h3 class="payment-mode-message">
+            Mode of Payment
+        </h3>
+
+        <div class="payment-mode-radio-btn-parent">
+            <input type="radio" name="mode-of-payment" id="direct-bank-transfer-input-radio" class="payment-mode-radio-inputs" checked>
+            <label for="direct-bank-transfer-input-radio" class="mode-of-payment-label">Direct Bank Transfer</label>
+        </div>
+
+        <div class="payment-mode-radio-btn-parent">
+            <input type="radio" name="mode-of-payment" id="bhim-upi-input-radio" class="payment-mode-radio-inputs">
+            <label for="bhim-upi-input-radio" class="mode-of-payment-label">BHIM UPI</label>
+        </div>
+
+        <div class="payment-mode-radio-btn-parent">
+            <input type="radio" name="mode-of-payment" id="credit-debit-cards-input-radio" class="payment-mode-radio-inputs">
+            <label for="credit-debit-cards-input-radio" class="mode-of-payment-label">Credit or Debit Cards</label>
+        </div>
+
+        <div class="payment-mode-radio-btn-parent">
+            <input type="radio" name="mode-of-payment" id="cash-on-delivery" class="payment-mode-radio-inputs">
+            <label for="cash-on-delivery" class="mode-of-payment-label">Cash on delivery</label>
+        </div>
+    </div>
+
+    <button type="submit" class="place-order-btn">Place Order</button>
+</form>
+
+{% endblock body %}

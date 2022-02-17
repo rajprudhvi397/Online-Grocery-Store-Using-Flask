@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for greeting */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for buttons */
+
+.page-message{
+    text-align: center;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+}
+
+.checkout-form{
+    width: 40vw;
+    margin: 2vh auto;
+    border: 1px solid rgb(59, 59, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vh 2vw;
+}
+
+.payment-mode-message{
+    font-size: 2.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.mode-of-payment-label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.place-order-btn{
+    width: 30vw;
+    height: 2.5rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.1vw;
+    padding-right: 2.1vw;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(59, 59, 238);
+}
+
+.place-order-btn:hover{
+    opacity: 0.7;
+}

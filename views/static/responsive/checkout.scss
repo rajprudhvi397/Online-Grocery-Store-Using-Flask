@@ -1,0 +1,30 @@
+@media only screen and (max-width: 700px) {
+    .checkout-form{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .checkout-form{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page-message{
+        font-size: 2.5rem;
+    }
+
+    .payment-mode-message{
+        font-size: 1.7rem;
+    }
+
+    .mode-of-payment-label{
+        font-size: 1.01rem;
+    }
+
+    .place-order-btn{
+        font-size: 1.1rem;
+        width: 65vw;
+    }
+}
