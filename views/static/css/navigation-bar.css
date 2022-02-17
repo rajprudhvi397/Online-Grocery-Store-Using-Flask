@@ -101,4 +101,42 @@
   height: 7px;
   margin-bottom: 5px;
 }
+
+/* Desigining auth and dashborard buttons */
+.navbar-auth-btn {
+  width: 5vw;
+  height: 7vh;
+  font-family: 'Rowdies', cursive;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  font-size: 1rem;
+  margin-left: 1.1vw;
+  text-align: center;
+}
+
+.navbar-auth-btn:hover {
+  opacity: 0.8;
+}
+
+.login-btn {
+  background-color: #ff5858;
+}
+
+.signup-btn {
+  background-color: #4e4ebb;
+}
 /*# sourceMappingURL=navigation-bar.css.map */

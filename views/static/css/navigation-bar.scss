@@ -81,3 +81,36 @@
     height: 7px;
     margin-bottom: 5px;
 }
+
+/* Desigining auth and dashborard buttons */
+
+.navbar-auth-btn{
+    width: 5vw;
+    height: 7vh;
+    font-family: 'Rowdies', cursive;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    font-size: 1rem;
+    margin-left: 1.1vw;
+    text-align: center;
+}
+
+.navbar-auth-btn:hover{
+    opacity: 0.8;
+}
+
+.login-btn{
+    background-color: rgb(255, 88, 88);
+}
+
+.signup-btn{
+    background-color: rgb(78, 78, 187);
+}
