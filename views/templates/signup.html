@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/signup.css') }}">
+
+<h1 class="page-title">
+    Signup to create a new Account
+</h1>
+
+<form class="form" method="post">
+    <div class="input-group">
+        <label for="form-input-1" class="form-label">Name</label>
+        <input type="text" name="name" placeholder="Your name" id="form-input-1" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-2" class="form-label">Email</label>
+        <input type="email" name="email" placeholder="Your Email" id="form-input-2" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-3" class="form-label">Password</label>
+        <input type="password" name="password" placeholder="Your Password" id="form-input-3" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-4" class="form-label">Confirm Password</label>
+        <input type="password" name="confirm-password" placeholder="Please Confirm your Password" id="form-input-4" class="form-input-text-password">
+    </div>  
+
+    <div class="input-group">
+        <label for="form-input-5" class="form-label">House Number</label>
+        <input type="text" name="house-number" id="form-input-5" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-6" class="form-label">Residence Name</label>
+        <input type="text" name="residence-name" id="form-input-6" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-7" class="form-label">City</label>
+        <input type="text" name="city-name" id="form-input-7" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-8" class="form-label">Pincode</label>
+        <input type="text" name="pincode" id="form-input-8" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-9" class="form-label">State</label>
+        <input type="text" name="state" id="form-input-9" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-10" class="form-label">Country</label>
+        <input type="text" name="country" id="form-input-10" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-11" class="form-label">Mobile Number</label>
+        <input type="number" name="mobile-number" id="form-input-11" class="form-input-text-password">
+    </div>
+    <button type="submit" class="form-submit-button">Signup</button>
+</form>
+
+{% endblock body %}

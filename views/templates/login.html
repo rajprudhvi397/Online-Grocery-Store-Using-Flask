@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/login.css') }}">
+
+
+<h1 class="page-title">
+    Login to an existing account
+</h1>
+
+<form class="form" method="post">
+    <div class="input-group">
+        <label for="form-input-2" class="form-label">Email</label>
+        <input type="email" name="email" placeholder="Your new Email" id="form-input-2" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-3" class="form-label">Password</label>
+        <input type="password" name="password" placeholder="Your new Password" id="form-input-3" class="form-input-text-password">
+    </div>
+    <a href="/forgotPassword" class="forgot-password">Forgot Password ?</a>
+    <button type="submit" class="form-submit-button">login</button>
+</form>
+
+{% endblock body %}

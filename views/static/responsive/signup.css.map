@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,KAAK,CAAA;IACD,KAAK,EAAE,IAAI;GACd;EAED,AAAA,WAAW,CAAA;IACP,SAAS,EAAE,IAAI;GAClB;EAED,AAAA,yBAAyB,CAAA;IACrB,KAAK,EAAE,IAAI;GACd",
     "sources": [
-        "editProfile.scss"
+        "signup.scss"
     ],
     "names": [],
-    "file": "editProfile.css"
+    "file": "signup.css"
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for greeting */
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for buttons */
 
 .page-title{
     text-align: center;
@@ -23,4 +24,11 @@
 
 .input-group{
     width: 60vw;
+}
+
+.forgot-password{
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
