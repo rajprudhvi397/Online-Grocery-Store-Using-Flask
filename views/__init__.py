@@ -42,6 +42,22 @@ def createApp():
 
     from .signup import signup
 
+    from .dashboard import dashboard
+
+    from .dashboardCategory import dashboardCategory
+
+    from .editDashboardCategory import editDashboardCategory
+
+    from .removeDashboardCategory import removeDashboardCategory
+
+    from .dashboardProduct import dashboardProduct
+
+    from .editDashboardProduct import editDashboardProduct
+
+    from .removeDashboardProduct import removeDashboardProduct
+
+    from .editDashboardDetails import editDashboardDetails
+
     app.register_blueprint(home,url_prefix='/') # Registering Blueprint so that all '/' requests are redirected to code of home.py
 
     app.register_blueprint(category,url_prefix='/category') # Register blueprint to access /category route of the website
@@ -63,6 +79,22 @@ def createApp():
     app.register_blueprint(login,url_prefix='/login') # Register blueprint to access /login route of the website
     
     app.register_blueprint(signup,url_prefix='/signup') # Register blueprint to access /signup route of the website
+
+    app.register_blueprint(dashboard,url_prefix='/dashboard') # Register blueprint to access /dashboard route of the website
+
+    app.register_blueprint(dashboardCategory,url_prefix='/dashboard/dashboardCategory') # Register blueprint to access /dashboard/dashboardCategory route of the website
+
+    app.register_blueprint(editDashboardCategory,url_prefix='/dashboard/dashboardCategory/editDashboardCategory') # Register blueprint to access /dashboard/editDashboardCategory route of the website
+
+    app.register_blueprint(removeDashboardCategory,url_prefix='/dashboard/dashboardCategory/removeDashboardCategory') # Register blueprint to access /dashboard/dashboardCategory/removeDashboardCategory route of the website
+
+    app.register_blueprint(dashboardProduct,url_prefix='/dashboard/dashboardProduct') # Register blueprint to access /dashboard/dashboardProduct route of the website
+
+    app.register_blueprint(editDashboardProduct,url_prefix='/dashboard/dashboardProduct/editDashboardCategory') # Register blueprint to access /dashboard/editDashboardProduct route of the website
+
+    app.register_blueprint(removeDashboardProduct,url_prefix='/dashboard/dashboardProduct/removeDashboardProduct') # Register blueprint to access /dashboard/dashboardProduct/removeDashboardProduct route of the website
+
+    app.register_blueprint(editDashboardDetails,url_prefix='/dashboard/editDashboardDetails') # Register blueprint to access /dashboard/editDashboardDetails route of the website
 
     createDatabase(app) # Running createDatabase function to create database if it doesn't exists
 

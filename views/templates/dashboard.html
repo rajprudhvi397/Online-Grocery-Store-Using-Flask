@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/dashboard.css') }}">
+
+<h1 class="page-title">
+    Hello 👋, The owner of the Grocery Store
+</h1>
+
+<div class="dashboard-buttons-div">
+    <a href="/dashboard/editDashboardDetails" class="dashboard-btn edit-dashboard-details-btn">Edit Dashboard Details</a>
+    <a href="/dashboard/dashboardCategory" class="dashboard-btn dashboard-categories-btn">Dashboard Categories</a>
+    <a href="/dashboard/dashboardProduct" class="dashboard-btn dashboard-products-btn">Dashboard Products</a>
+    <a href="/logout" class="dashboard-btn logout-btn">Logout</a>
+</div>
+
+{% endblock body %}

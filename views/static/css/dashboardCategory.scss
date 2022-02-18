@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for greeting */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap'); /* Importing Font for buttons */
+
+.page-title{
+    text-align: center;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+}
+
+.add-category-btn{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 2vh auto;  
+    padding: 1vh 2.1vw;
+    font-size: 1.3rem;
+    background-color: rgb(27, 154, 238);
+}
+
+
+
+.categories-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin: 4vh auto;
+}
+
+.category-div{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 15vh;
+    padding: 2vh 0.7vw;
+    margin-bottom: 2vh;
+}
+
+.category-name-input{
+    width: 40vw;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 1.2vh 1vw;
+    font-size: 1.12rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    border-radius: 5px;
+    height: 10vh;
+}
+
+.category-name-input:focus{
+    outline: none;
+}
+
+.delete-category-btn{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.update-name-btn{
+    width: 5vw;
+    height: 3vh;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    border: none;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw 3vw;
+    background-color: rgb(255, 88, 88);
+}
+
+/* From here we will start designing modal */
+.delete-check-modal{
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: opacity 0.3s ease-out;
+}
+
+.modal-title{
+    text-align: center;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dim-background{
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
+
+.hide-modal{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-btn{
+    width: 5vw;
+    height: 3vh;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    border: none;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw 3vw;
+    margin: 1vh 5vw;
+    cursor: pointer;
+}
+
+.cancel-btn{
+    background-color: rgb(189, 189, 189);
+}
+
+.delete-btn{
+    background-color: rgb(255, 88, 88);
+}

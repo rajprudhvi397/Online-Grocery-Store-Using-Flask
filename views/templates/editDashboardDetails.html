@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/signup.css') }}">
+
+<h1 class="page-title">
+    Edit Details of the owner of Grocery Store
+</h1>
+
+<form class="form" method="post">
+    <div class="input-group">
+        <label for="form-input-2" class="form-label">Email</label>
+        <input type="email" name="email" placeholder="Enter your new email" id="form-input-2" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-3" class="form-label">Password</label>
+        <input type="password" name="password" placeholder="Your new Password" id="form-input-3" class="form-input-text-password">
+    </div>
+    <div class="input-group">
+        <label for="form-input-4" class="form-label">Confirm Password</label>
+        <input type="password" name="confirm-password" placeholder="Please Confirm your new Password" id="form-input-4" class="form-input-text-password">
+    </div>
+    <button type="submit" class="form-submit-button">Save Changes</button>
+</form>
+
+{% endblock body %}

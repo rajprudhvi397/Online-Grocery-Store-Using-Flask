@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboardCategory.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/dashboardCategory.css') }}">
+
+<h1 class="page-title">
+    Here 👇 you can view and edit categories of the products of website
+</h1>
+
+<a href="/dashboard/dashboardCategory/addCategory" class="add-category-btn">
+    Add Category
+</a>
+
+<div class="categories-parent">
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+
+    <div class="category-div">
+        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
+        <a class="update-name-btn">Update Category</a>
+        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
+    </div>
+</div>
+
+<div class="delete-check-modal hide-modal">
+    <h1 class="modal-title">
+        Are you sure that you want to delete this category ?
+    </h1>
+    <div class="modal-btn-div">
+    <a class="modal-btn cancel-btn">
+        Cancel
+    </a>
+    <a class="modal-btn delete-btn">
+        Yes, Delete it
+    </a>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='js/modal-animation-dashboard.js') }}"></script>t
+
+{% endblock body %}

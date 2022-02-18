@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap");
+/* Importing Font for greeting */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap");
+/* Importing Font for buttons */
+.page-title {
+  text-align: center;
+  margin-top: 1.8vh;
+  margin-bottom: 1.8vh;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 3rem;
+}
+
+.dashboard-buttons-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 3vh auto;
+}
+
+.dashboard-btn {
+  width: 40vw;
+  height: 7vh;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2.1vw;
+  padding-right: 2.1vw;
+  font-size: 1.3rem;
+  margin-bottom: 2vh;
+}
+
+.edit-dashboard-details-btn {
+  background-color: #ff5858;
+}
+
+.dashboard-categories-btn {
+  background-color: #4e4ebb;
+}
+
+.dashboard-products-btn {
+  background-color: #29ac60;
+}
+
+.logout-btn {
+  background-color: #1b9aee;
+}
+/*# sourceMappingURL=dashboard.css.map */
