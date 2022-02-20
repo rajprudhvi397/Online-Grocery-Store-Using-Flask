@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1200px) {
+
+    .page-title{
+        font-size: 1.5rem;
+    }
+
+    .add-category-div{
+        flex-direction: column;
+    }
+
+    .add-category-div input{
+        width: 70vw;
+        font-size: 0.8rem;
+    }
+
+    .add-category-div button{
+        margin-top: 3vh;
+        width: 50vw;
+        font-size: 0.8rem;
+    }
+
+    .category-div{
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    .category-name-input{
+        height: 3vh;
+        width: 60vw;
+        font-size: 0.8rem;
+    }
+    
+    .update-name-btn{
+        margin-top: 0.2vh;
+        margin-bottom: 0.2vh;
+        width: 20vw;
+        height: 0.5vh;
+        font-size: 0.8rem;
+    }
+
+    .delete-category-btn{
+        margin-bottom: 0.2vh;
+    }
+}
