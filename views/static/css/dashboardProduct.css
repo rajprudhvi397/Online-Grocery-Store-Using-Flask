@@ -119,50 +119,20 @@
 
 .edit-product-details-btn {
   background-color: #4e4ebb;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .remove-product-btn {
   background-color: #ff5858;
-}
-
-.dashboard-products-modal {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 60vw;
-  height: 60vh;
-  border-radius: 12px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  z-index: 5;
-  -webkit-transition: opacity 0.8s ease-out;
-  transition: opacity 0.8s ease-out;
-  background-color: white;
-}
-
-.make-invisible {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dim-background {
-  -webkit-box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=dashboardProduct.css.map */

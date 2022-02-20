@@ -52,6 +52,8 @@ def createApp():
 
     from .dashboardProduct import dashboardProduct
 
+    from .editDashboardProduct import editDashboardProduct
+
     app.register_blueprint(home,url_prefix='/') # Registering Blueprint so that all '/' requests are redirected to code of home.py
 
     app.register_blueprint(category,url_prefix='/category') # Register blueprint to access /category route of the website
@@ -81,6 +83,8 @@ def createApp():
     app.register_blueprint(addDashboardCategory,url_prefix='/dashboard/dashboardCategory/addDashboardCategory') # Register blueprint to access /dashboard/dashboardCategory/addDashboardCategory route of the website
 
     app.register_blueprint(dashboardProduct,url_prefix='/dashboard/dashboardProduct') # Register blueprint to access /dashboard/dashboardProduct route of the website
+
+    app.register_blueprint(editDashboardProduct,url_prefix='/dashboard/editDashboardProduct') # Register blueprint to access /dashboard/editDashboardProduct route of the website
 
     app.register_blueprint(editDashboardDetails,url_prefix='/dashboard/editDashboardDetails') # Register blueprint to access /dashboard/editDashboardDetails route of the website
 

@@ -81,40 +81,13 @@
 
 .edit-product-details-btn{
     background-color: rgb(78, 78, 187);
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .remove-product-btn{
     background-color: rgb(255, 88, 88);
-}
-
-// Modal Designing
-
-.dashboard-products-modal{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 60vw;
-    height: 60vh;
-    border-radius: 12px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    z-index: 5;
-    transition: opacity 0.8s ease-out;
-    background-color: white;
-}
-
-.make-invisible{
-    opacity: 0;
-    pointer-events: none;
-}
-
-.dim-background{
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0,0.3);
 }

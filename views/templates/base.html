@@ -17,9 +17,6 @@
     <!-- Linking CSS File that will design navigation bar -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navigation-bar.css') }}">
 
-    <!-- Linking CSS File that will design the footer -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
-
     <!-- Linking CSS File that will make the navigation bar responsive -->
     <link rel="stylesheet" href="{{ url_for('static', filename='responsive/navigation-bar.css') }}">
 
@@ -82,9 +79,6 @@
     {% block body %}
 
     {% endblock body %}
-    <footer class="website-footer">
-        Copyright 2022 | TB Grocery Store
-    </footer>
 </body>
 
 <script src="{{ url_for('static', filename='js/responsive-navigation-bar.js') }}"></script>
