@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboardProduct.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/dashboardProduct.css') }}">
+
+<h1 class="page-title">
+    Your Products
+</h1>
+
+<div class="products-div-parent">
+
+    <div class="edit-product-modal dashboard-products-modal make-invisible" id="modal-1">
+        <h3 class="modal-title">
+            Edit Product Details
+        </h3>
+
+        <form class="form">
+            <div class="input-group">
+                <label for="form-input-1" class="form-label">Produc Image</label>
+                <input type="file" name="product-img" placeholder="Choose New Product image" id="form-input-1" class="form-input-text-password">
+            </div>
+
+            <div class="input-group">
+                <label for="form-input-2" class="form-label">Edit Form Image</label>
+                <input type="text" name="product-name" placeholder="Enter New Product name" id="form-input-2" class="form-input-text-password">
+            </div>
+
+            <div class="input-group">
+                <label for="form-input-3" class="form-label">Product Price</label>
+                <input type="number" name="product-price" placeholder="Enter New Price" id="form-input-3" class="form-input-text-password">
+            </div>
+
+            <button type="submit" class="form-submit-button">Save Changes</button>
+        </form>
+    </div>
+
+    <div class="product-div">
+        <img src="{{ url_for('static', filename='img/product-img.jpg') }}" id="modal-1-img" class="product-img">
+        <div class="product-details">
+            <h3 class="product-name">Pepsi cold drink can</h3>
+            <h4 class="product-price">Rs 150/-</h4>
+            <div class="product-buttons-div">
+                <button class="edit-product-details-btn product-btn modal-1">Edit Product Details</button>
+                <button class="remove-product-btn product-btn">Remove Product</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-div">
+        <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+        <div class="product-details">
+            <h3 class="product-name">Pepsi cold drink can</h3>
+            <h4 class="product-price">Rs 150/-</h4>
+            <div class="product-buttons-div">
+                <button class="edit-product-details-btn product-btn">Edit Product Details</button>
+                <button class="remove-product-btn product-btn">Remove Product</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-div">
+        <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+        <div class="product-details">
+            <h3 class="product-name">Pepsi cold drink can</h3>
+            <h4 class="product-price">Rs 150/-</h4>
+            <div class="product-buttons-div">
+                <button class="edit-product-details-btn product-btn">Edit Product Details</button>
+                <button class="remove-product-btn product-btn">Remove Product</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-div">
+        <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+        <div class="product-details">
+            <h3 class="product-name">Pepsi cold drink can</h3>
+            <h4 class="product-price">Rs 150/-</h4>
+            <div class="product-buttons-div">
+                <button class="edit-product-details-btn product-btn">Edit Product Details</button>
+                <button class="remove-product-btn product-btn">Remove Product</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-div">
+        <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+        <div class="product-details">
+            <h3 class="product-name">Pepsi cold drink can</h3>
+            <h4 class="product-price">Rs 150/-</h4>
+            <div class="product-buttons-div">
+                <button class="edit-product-details-btn product-btn">Edit Product Details</button>
+                <button class="remove-product-btn product-btn">Remove Product</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/dashboardProduct modal.js') }}"></script>
+
+{% endblock body %}
