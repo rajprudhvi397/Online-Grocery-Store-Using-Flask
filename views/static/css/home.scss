@@ -67,6 +67,13 @@ $mainBackgroundAreaFontColor : #1022f7;
     // border: 1px solid black;
     padding: 1.2vh 1.2vw;
     border-radius: 12px;
+    transition: background-color 0.7s ease;
+    transition: box-shadow 0.7s ease;
+}
+
+.product:hover{
+    background-color: rgb(206, 240, 255);
+    box-shadow: 2px 2px 10px 2px black;
 }
 
 .product-img{

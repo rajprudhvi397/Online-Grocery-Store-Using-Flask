@@ -1,1 +1,29 @@
-/* No CSS *//*# sourceMappingURL=dashboardProduct.css.map */
+@media only screen and (max-width: 950px) {
+  .add-product-btn-div {
+    width: 80vw;
+  }
+  .add-product-btn {
+    font-size: 1.2rem;
+  }
+  .product-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-img {
+    height: 40vh;
+    width: 50vw;
+  }
+  .product-btn {
+    width: 50vw;
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=dashboardProduct.css.map */

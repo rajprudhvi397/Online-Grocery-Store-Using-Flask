@@ -27,6 +27,18 @@
   margin-right: auto;
   margin-left: auto;
   padding: 2.4vh 2.4vw;
+  -webkit-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease;
+  -webkit-transition: -webkit-box-shadow 0.7s ease;
+  transition: -webkit-box-shadow 0.7s ease;
+  transition: box-shadow 0.7s ease;
+  transition: box-shadow 0.7s ease, -webkit-box-shadow 0.7s ease;
+}
+
+.product:hover {
+  background-color: #cef0ff;
+  -webkit-box-shadow: 2px 2px 10px 2px black;
+          box-shadow: 2px 2px 10px 2px black;
 }
 
 .product-img {

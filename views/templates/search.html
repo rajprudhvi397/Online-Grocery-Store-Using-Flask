@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- This file will design the home page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/category.css') }}">
+
+<!-- This file will make the home page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/category.css') }}">
+
+    <div class="products-section">
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+            <div class="product-info">
+                <div class="main-product-info">
+                    <a href="/product/flksjlsj" class="product-name-anchor"><h4 class="product-name">Pepsi Cold Drink Can</h4></a>
+                    <span class="price">Rs. 45/-</span>
+                </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+            <div class="product-info">
+                <div class="main-product-info">
+                    <a href="/product/flksjlsj" class="product-name-anchor"><h4 class="product-name">Pepsi Cold Drink Can</h4></a>
+                    <span class="price">Rs. 45/-</span>
+                </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/product-img.jpg') }}" class="product-img">
+            <div class="product-info">
+                <div class="main-product-info">
+                    <a href="/product/flksjlsj" class="product-name-anchor"><h4 class="product-name">Pepsi Cold Drink Can</h4></a>
+                    <span class="price">Rs. 45/-</span>
+                </div>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock body %}

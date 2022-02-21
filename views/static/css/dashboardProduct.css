@@ -10,6 +10,37 @@
   font-size: 3rem;
 }
 
+.add-product-btn-div {
+  background-color: #00c3ff;
+  width: 40vw;
+  height: 10vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.add-product-btn-div:hover {
+  opacity: 0.8;
+}
+
+.add-product-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
 .products-div-parent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +81,6 @@
   transition: box-shadow 0.7s ease;
   transition: box-shadow 0.7s ease, -webkit-box-shadow 0.7s ease;
   cursor: pointer;
-  z-index: 1;
 }
 
 .product-div:hover {

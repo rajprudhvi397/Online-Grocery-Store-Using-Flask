@@ -1,0 +1,25 @@
+@media only screen and (max-width: 950px){
+    .add-product-btn-div{
+        width: 80vw;
+    }
+
+    .add-product-btn{
+        font-size: 1.2rem;
+    }
+
+    .product-div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img{
+        height: 40vh;
+        width: 50vw;
+    }
+
+    .product-btn{
+        width: 50vw;
+        font-size: 0.7rem;
+    }
+}
