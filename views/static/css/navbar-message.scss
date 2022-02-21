@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap'); /* Importing Font for greeting */
+
+body{
+    overflow-x: hidden;
+}
+
+.message{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+.warning-message{
+    border: 2px solid rgb(255, 54, 54);
+    background-color: rgb(255, 180, 180);
+}
+
+.success-message{
+    border: 2px solid rgb(19, 196, 34);
+    background-color: rgb(157, 236, 164);
+}
+
+.message-info-div{
+    display: flex;
+    align-items: center;
+}
+
+.message-img{
+    width: 5vw;
+    height: 10vh;
+    margin-right: 2vw;
+}
+
+.message-text{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+}
+
+.close-message-img{
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.popup-message-div{
+    position: absolute;
+    width: 30%;
+    right: 5%;
+    // width: 60vw;
+    // height: 20vh;
+    padding: 5vh 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    bottom: 10%;
+    transition: right 0.9s ease;
+}
+
+.warning-popup-message{
+    background-color: rgb(255, 54, 54);
+    color: white;
+}
+
+.success-popup-message{
+    background-color: rgb(19, 196, 34);
+    color: white;
+}
+
+.hide-message{
+    right: -50%;
+}

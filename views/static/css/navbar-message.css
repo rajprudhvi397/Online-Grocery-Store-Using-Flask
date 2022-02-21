@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap");
+/* Importing Font for greeting */
+body {
+  overflow-x: hidden;
+}
+
+.message {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 3vw;
+}
+
+.warning-message {
+  border: 2px solid #ff3636;
+  background-color: #ffb4b4;
+}
+
+.success-message {
+  border: 2px solid #13c422;
+  background-color: #9deca4;
+}
+
+.message-info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-img {
+  width: 5vw;
+  height: 10vh;
+  margin-right: 2vw;
+}
+
+.message-text {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.5rem;
+}
+
+.close-message-img {
+  width: 3vw;
+  height: 6vh;
+  cursor: pointer;
+}
+
+.popup-message-div {
+  position: absolute;
+  width: 30%;
+  right: 5%;
+  padding: 5vh 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+  bottom: 10%;
+  -webkit-transition: right 0.9s ease;
+  transition: right 0.9s ease;
+}
+
+.warning-popup-message {
+  background-color: #ff3636;
+  color: white;
+}
+
+.success-popup-message {
+  background-color: #13c422;
+  color: white;
+}
+
+.hide-message {
+  right: -50%;
+}
+/*# sourceMappingURL=navbar-message.css.map */

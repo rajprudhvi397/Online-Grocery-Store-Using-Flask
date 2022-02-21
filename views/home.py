@@ -5,4 +5,4 @@ home = Blueprint('home',__name__,static_folder='static',template_folder='templat
 @home.route('/')
 def renderHomePage():
     ''' This is the function that will run when someone called for '/' route '''
-    return render_template('home.html') # Rendering home.html page
+    return render_template('home.html',title='TB Grocery Store - The one stop solution for all grocery related items') # Rendering home.html page
