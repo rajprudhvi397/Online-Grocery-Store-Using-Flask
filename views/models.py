@@ -1,6 +1,5 @@
 """ FILE DESCRIPTION : THIS FILE WILL CREATE DATABASE MODELS NEEDED FOR THE WEBSITE """
 
-from enum import unique
 from . import db # Importing db variable to create database models from __init__.py
 from flask_login import UserMixin # Importing UserMixin from flask_login module for loggin in users
 
@@ -35,25 +34,32 @@ class Product(db.Model):
     productPrice = db.Column(db.String(100000),nullable=False)
     categoryId = db.Column(db.String(10000),nullable=False) # This will be the Id of the category of which the product is
 
-''' THROUGH THE FOLLOWING WAY WILL SET CART, ORDERS AND ORDER MODELS OF THE WEBSITE'''
-'''
-The Cart Model will contain cart items as rows and the model will contain 4 columns
-The columns of the model will be as userId, productId, quantityId and itemId
-All the rows conaining same userId means this rows are of same user means these items are in the corresponding users cart
-When someone will buy this cart then all the rows containing userId will be deletd and this data will be replicated in orders model just changing Itemid by OrderId which will not be unique for each row and removing productId and productQuantity.
-Same Order Id for different rows means the items corresponding to these rows are in same order.
-Also there will be one more Model which would be Order having rows as userId, totalPrice, totalItems and OrderId
-This orderId will be same as that in Orders column
-'''
-
 class Cart(db.Model):
     ''' This model will store all the items of cart of the website '''
     userId = db.Column(db.String(10000),nullable=False)
     productId = db.Column(db.String(10000),nullable=False)
     productQuantity = db.Column(db.Integer(1000),nullable=False)
     itemId = db.Column(db.String(10000),nullable=False,primary_key=True,unique=True)
+    cartId = db.Column(db.String(10000),nullable=False) # This is the id of all cart in which products are there different Items may have same cartId and if so then it means these items are in same cart
+    cartActive = db.Column(db.String(10),nullable=False) # This column will either take True or False. If True it means that cart has not been bought yet and if False it means user has bought the cart
 
-class Orders(db.Model):
-    ''' This model will store all the items of cart of the website '''
-    userId = db.Column(db.String(10000),nullable=False)
-    itemId = db.Column(db.String(10000),nullable=False,primary_key=True,unique=True)
+class Order(db.Model):
+    ''' This model will contain all the data related to a any order that user has made'''
+    orderNumber = db.Column(db.Integer,nullable=False,unique=True,primary_key=True) # This is the number of the order
+    userId = db.Column(db.String(10000),nullable=False) # This will be the Id of user who has made this order
+    orderId = db.Column(db.String(10000),nullable=False,unique=True) # This will be a unique Id of the order
+    cartId = db.Column(db.String(10000),nullable=False) # This is the id of the cart that has been bought to make this order happen
+    date = db.Column(db.String(100),nullable=False) # This is the date at which order was placed
+
+''' HOW THE MODEL WILL WORK '''
+'''
+There are 5 Models in which User,Category and Product Model will store info about respective things
+and Cart Model will store userId to know who's cart is it, productId to now what is the product of one item with quantity to know how much is the product and cartId to identify unique Carts and cartActive to
+know wether a cart is active or has been bought.
+Once somebody buys a cart it becomes unactive and a new cart is assigned to the user
+The 5th Model is Order Model which will store info about orders made in entire website. Order Model will
+contain 5 Columns which are OrderNumber to know which order is it,userId to know who has made the order,
+OrderId to know uniquely identify an order, cartId to know of which cart is this order which cart was
+bought to make the order happen and finally date to know when was the order made.
+Date will be in form dd-mm-yyyy
+'''
