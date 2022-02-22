@@ -8,38 +8,63 @@
 <!-- This file will make this page responsive -->
 <link rel="stylesheet" href="{{ url_for('static', filename='responsive/viewOrder.css') }}">
 
+<!-- This file will design this page -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/orders.css') }}">
+
+<!-- This file will make this page responsive -->
+<link rel="stylesheet" href="{{ url_for('static', filename='responsive/orders.css') }}">
+
 <h1 class="order-number">Order #112</h1>
 
 <h3 class="order-date-detail">
     This order was placed on 55 April 2157
 </h3>
 
-<table class="order-details-table">
+<table class="orders-table">
     <thead>
-        <tr>
-            <th class="darker-background-td-elements order-table-th-td-elements">Product</th>
-            <th class='darker-background-td-elements order-table-th-td-elements'>Total</th>
+        <tr class="orders-table-th-parent">
+            <th>Sno.</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="darker-background-td-elements order-table-th-td-elements">Pepsi Cold Drink Can</td>
-            <td class="lighter-background-td-elements order-table-th-td-elements">Rs. 150</td>
+        <tr class="orders-table-td-parent">
+            <td>1</td>
+            <td>Pepsi Cold Drink can</td>
+            <td>Rs 150/-</td>
+            <td>2</td>
+            <td>Rs 300/-</td>
         </tr>
-        <tr>
-            <td class="darker-background-td-elements order-table-th-td-elements">No. of Items</td>
-            <td class="lighter-background-td-elements order-table-th-td-elements">2</td>
+        <tr class="orders-table-td-parent">
+            <td>1</td>
+            <td>Pepsi Cold Drink can</td>
+            <td>Rs 150/-</td>
+            <td>2</td>
+            <td>Rs 300/-</td>
         </tr>
-        <tr>
-            <td class="darker-background-td-elements order-table-th-td-elements">Payment Method</td>
-            <td class="lighter-background-td-elements order-table-th-td-elements">BHIM UPI</td>
+        <tr class="orders-table-td-parent">
+            <td>1</td>
+            <td>Pepsi Cold Drink can</td>
+            <td>Rs 150/-</td>
+            <td>2</td>
+            <td>Rs 300/-</td>
         </tr>
-        <tr>
-            <td class="darker-background-td-elements order-table-th-td-elements">Total</td>
-            <td class="lighter-background-td-elements order-table-th-td-elements">Rs. 300</td>
+        <tr class="orders-table-td-parent">
+            <td>1</td>
+            <td>Pepsi Cold Drink can</td>
+            <td>Rs 150/-</td>
+            <td>2</td>
+            <td>Rs 300/-</td>
         </tr>
     </tbody>
 </table>
+
+<h3 class="total-price">
+    Total Rs 1200/- for 4 items
+</h3>
 
 <div class="adress-info">
     <div class="adress-title-parent">
@@ -66,11 +91,6 @@
             +0000000000000
         </div>
     </div>
-</div>
-
-<div class="bill-buttons-parent">
-    <a class="bill-buttons view-bill-button">View Bill</a>
-    <a class="bill-buttons downlaod-bill-button">Download Bill</a>
 </div>
 
 {% endblock body %}

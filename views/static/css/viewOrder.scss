@@ -17,7 +17,15 @@
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
-.order-details-table{
+.total-price{
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+.orders-table{
     width: 80vw;
     border: 1px solid black;
     margin-right: auto;
@@ -26,18 +34,26 @@
     margin-bottom: 3vh;
 }
 
-.order-table-th-td-elements{
-    text-align: center;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    font-size: 1.1rem;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+.orders-table thead{
+    background-color: rgb(117, 117, 117);
 }
 
-.darker-background-td-elements{
-    background-color: rgb(117, 117, 117);
-    color: white;
-    font-size: 1.5rem;
+.orders-table-th-parent th{
+    padding: 1.2vh 1vw;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.3rem;
+}
+
+.orders-table-td-parent{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.orders-table-td-parent td{
+    padding: 1.2vh 1vw;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.12rem;
 }
 
 .adress-info{
@@ -60,36 +76,4 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.bill-buttons-parent{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.bill-buttons{
-    width: 30vw;
-    height: 5vw;
-    font-family: 'Baloo Bhaijaan 2', cursive;
-    white-space: nowrap;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2.1vw;
-    padding-right: 2.1vw;
-    font-size: 1.3rem;
-}
-
-.view-bill-button{
-    background-color: rgb(255, 88, 88);
-}
-
-.downlaod-bill-button{
-    background-color: rgb(78, 78, 187);
 }

@@ -49,6 +49,7 @@ class Order(db.Model):
     userId = db.Column(db.String(10000),nullable=False) # This will be the Id of user who has made this order
     orderId = db.Column(db.String(10000),nullable=False,unique=True) # This will be a unique Id of the order
     cartId = db.Column(db.String(10000),nullable=False) # This is the id of the cart that has been bought to make this order happen
+    paymentMethod = db.Column(db.String(100),nullable=False) # This will store the payment method
     date = db.Column(db.String(100),nullable=False) # This is the date at which order was placed
 
 ''' HOW THE MODEL WILL WORK '''
