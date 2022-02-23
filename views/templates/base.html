@@ -45,7 +45,7 @@
         </form>
 
         {% if user.is_authenticated %}
-          {% if user.emailOfUser == 'shuklaharshuprasad@gmail.com' %}
+          {% if user.userId == 'owner' %}
               <!-- This is the part that will be shown to the owners of the website -->
                 <div class="navbar-img-parent visibility-resp v-resp">
                     <div class="my-account-info navbar-img-info-div">

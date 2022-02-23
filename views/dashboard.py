@@ -8,7 +8,7 @@ dashboard = Blueprint('dashboard',__name__,static_folder='static',template_folde
 def renderDashboardPage():
     ''' This is the function that will run when someone called for '/' route '''
     if current_user.is_authenticated:
-        if current_user.emailOfUser == 'shuklaharshuprasad@gmail.com':
+        if current_user.userId == 'owner':
             return render_template('dashboard.html',title='Shop Dashboard - TB Grocery Store',user=current_user) # Rendering dashboard.html page
         else:
             return redirect('/') 

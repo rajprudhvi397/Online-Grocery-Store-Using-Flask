@@ -29,6 +29,11 @@ def renderSignupPage():
             isEmailValid = checkEmail(emailId) # Checking if Email is valid or not
 
             if isEmailValid:
+
+                if len(password) < 5:
+                    flash("Password must be atleast of 5 characters",category='error')
+                    return redirect('/signup') # returning to signup page
+
                 doesEmailExists = User.query.filter_by(emailOfUser=emailId).first() # This variable will return true if email exists
 
                 if not doesEmailExists: # Means there is no user having same email then
