@@ -44,60 +44,73 @@
             <input type="search" name="search-input" id="search-input" placeholder="Search..." class="search-input">
         </form>
 
-        <!-- This part will be shown to the users that have logged in -->
-        <!-- <div class="navbar-img-parent visibility-resp v-resp">
-            <div class="my-account-info navbar-img-info-div">
-                <a href="/account">
-                    <img src="{{ url_for('static', filename='img/user.png') }}" class="navbar-img">
-                </a>
-                <span class="navabr-img-name">My Account</span>
-            </div>
-            <div class="cart-info navbar-img-info-div">
-                <a href="/cart">
-                    <img src="{{ url_for('static', filename='img/shopping-cart.png') }}" class="navbar-img">
-                </a>
-                <span class="navabr-img-name">My Cart</span>
-            </div>
-        </div> -->
+        {% if user.is_authenticated %}
+          {% if user.emailOfUser == 'shuklaharshuprasad@gmail.com' %}
+              <!-- This is the part that will be shown to the owners of the website -->
+                <div class="navbar-img-parent visibility-resp v-resp">
+                    <div class="my-account-info navbar-img-info-div">
+                        <a href="/dashboard">
+                            <img src="{{ url_for('static', filename='img/dashboard.png') }}" class="navbar-img">
+                        </a>
+                        <span class="navabr-img-name">Dashboard</span>
+                    </div>
+                </div>
+          {% else %}
+              <!-- This part will be shown to the users that have logged in -->
+                <div class="navbar-img-parent visibility-resp v-resp">
+                    <div class="my-account-info navbar-img-info-div">
+                        <a href="/account">
+                            <img src="{{ url_for('static', filename='img/user.png') }}" class="navbar-img">
+                        </a>
+                        <span class="navabr-img-name">My Account</span>
+                    </div>
+                    <div class="cart-info navbar-img-info-div">
+                        <a href="/cart">
+                            <img src="{{ url_for('static', filename='img/shopping-cart.png') }}" class="navbar-img">
+                        </a>
+                        <span class="navabr-img-name">My Cart</span>
+                    </div>
+                </div>
+          {% endif %}
 
-        <!-- This buttons will be shown to the users that have not yet logged in -->
-        <div class="navbar-img-parent visibility-resp v-resp">
-            <a href="/login" class="navbar-auth-btn login-btn">Login</a>
-            <a href="/signup" class="navbar-auth-btn signup-btn">Signup</a>
-        </div>
+        {% else %}
+                <!-- This buttons will be shown to the users that have not yet logged in -->
+                <div class="navbar-img-parent visibility-resp v-resp">
+                    <a href="/login" class="navbar-auth-btn login-btn">Login</a>
+                    <a href="/signup" class="navbar-auth-btn signup-btn">Signup</a>
+                </div>
+        {% endif %}
 
-        <!-- This is the part that will be shown to the owners of the website -->
-        <!-- <div class="navbar-img-parent visibility-resp v-resp">
-            <div class="my-account-info navbar-img-info-div">
-                <a href="/dashboard">
-                    <img src="{{ url_for('static', filename='img/dashboard.png') }}" class="navbar-img">
-                </a>
-                <span class="navabr-img-name">Dashboard</span>
-            </div>
-        </div> -->
-
-        
     </nav>
 
-    <!-- <div class="message warning-message">
-        <div class="message-info-div">
-            <img src="{{ url_for('static', filename='img/warning.png') }}" class="warning-img message-img">
-            <h3 class="message-text">
-                This is a warning message
-            </h3>
-        </div>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="close-message-img">
-    </div> -->
-
-    <!-- <div class="message success-message">
-        <div class="message-info-div">
-            <img src="{{ url_for('static', filename='img/success.png') }}" class="warning-img message-img">
-            <h3 class="message-text">
-                This is a warning message
-            </h3>
-        </div>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="close-message-img">
-    </div> -->
+    <!-- Flashing Messages according to category -->
+  {% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+  {% for category,message in messages %}
+  {% if category == 'error' %}
+  <div class="message warning-message">
+    <div class="message-info-div">
+        <img src="{{ url_for('static', filename='img/warning.png') }}" class="warning-img message-img">
+        <h3 class="message-text">
+            {{message}}
+        </h3>
+    </div>
+    <img src="{{ url_for('static', filename='img/cancel.png') }}" class="close-message-img">
+</div>
+  {% else %}
+  <div class="message success-message">
+    <div class="message-info-div">
+        <img src="{{ url_for('static', filename='img/success.png') }}" class="warning-img message-img">
+        <h3 class="message-text">
+            {{message}}
+        </h3>
+    </div>
+    <img src="{{ url_for('static', filename='img/cancel.png') }}" class="close-message-img">
+</div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
 
     <div class="popup-message-div warning-popup-message hide-message">
         <h3 class="message-text" id="warning-text"></h3>

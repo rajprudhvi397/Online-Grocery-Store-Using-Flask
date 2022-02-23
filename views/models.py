@@ -19,6 +19,10 @@ class User(db.Model, UserMixin):
     countryName = db.Column(db.String(5000),nullable=False)
     mobileNumber = db.Column(db.String(50),nullable=False)
 
+    def get_id(self):
+        ''' This function will override the default properties of get_id under the User Class '''
+        return (self.userId)
+
 class Category(db.Model):
     ''' This model will store all the categories of the website '''
     categoryId = db.Column(db.String(10000),nullable=False,primary_key=True,unique=True)
@@ -38,7 +42,7 @@ class Cart(db.Model):
     ''' This model will store all the items of cart of the website '''
     userId = db.Column(db.String(10000),nullable=False)
     productId = db.Column(db.String(10000),nullable=False)
-    productQuantity = db.Column(db.Integer(1000),nullable=False)
+    productQuantity = db.Column(db.Integer,nullable=False)
     itemId = db.Column(db.String(10000),nullable=False,primary_key=True,unique=True)
     cartId = db.Column(db.String(10000),nullable=False) # This is the id of all cart in which products are there different Items may have same cartId and if so then it means these items are in same cart
     cartActive = db.Column(db.String(10),nullable=False) # This column will either take True or False. If True it means that cart has not been bought yet and if False it means user has bought the cart
