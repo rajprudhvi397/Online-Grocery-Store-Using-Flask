@@ -1,4 +1,3 @@
-from tkinter import E
 from flask import Blueprint,render_template, redirect,request,flash
 from flask_login import current_user
 from werkzeug.security import generate_password_hash # Importing module to hash password of the user
@@ -19,7 +18,7 @@ def renderEditDashboardDetailsPage():
                 newEmailId = request.form['email']
                 newPassword = request.form['password']
                 confirmPassword = request.form['confirm-password']
-                isEmailValid = checkEmail(newEmailId)
+                isEmailValid = checkEmail(newEmailId) # Checking if email is valid or not
 
                 if isEmailValid:
                     
