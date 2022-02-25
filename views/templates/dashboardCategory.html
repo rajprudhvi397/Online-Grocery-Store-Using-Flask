@@ -13,47 +13,27 @@
 </h1>
 
 <div class="add-category-div">
-    <input type="text" name="add-category-input">
-    <button>Add Category</button>
+    <input type="text" name="add-category-input" id="add-category-input">
+    <button id="add-category-btn">Add Category</button>
 </div>
 
-<div class="categories-parent">
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
-
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
-
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
-
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
-
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
-
-    <div class="category-div">
-        <input type="text" name="category-name" placeholder="Enter the Category Name" value="Beverages" class="category-name-input">
-        <a class="update-name-btn">Update Category</a>
-        <img src="{{ url_for('static', filename='img/cancel.png') }}" class="delete-category-btn">
-    </div>
+{% if categories|length == 0 %}
+<div class="no-category categories-parent">
+    <h1 class="page-title">
+        Your added categories will be shown here
+    </h1>
 </div>
+{% else %}
+    <div class="categories-parent">
+        {% for category in categories %}
+            <div class="category-div">
+                <input type="text" name="category-name" placeholder="Enter the Category Name" value="{{category.categoryName}}" class="category-name-input">
+                <a class="{{category.categoryId}} update-name-btn">Update Category</a>
+                <img src="{{ url_for('static', filename='img/cancel.png') }}" class="{{category.categoryId}} delete-category-btn">
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
 
 <div class="delete-check-modal hide-modal">
     <h1 class="modal-title">
@@ -69,6 +49,9 @@
 </div>
 </div>
 
-<script src="{{ url_for('static', filename='js/modal-animation-dashboard.js') }}"></script>t
+<script src="{{ url_for('static', filename='js/modal-animation-dashboard.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dashboardCategory.js') }}"></script>
+<script src="{{ url_for('static', filename='js/edit-dashboard-category.js') }}"></script>
+<script src="{{ url_for('static', filename='js/delete-dashboard-category.js') }}"></script>
 
 {% endblock body %}
