@@ -56,6 +56,8 @@ def createApp():
 
     from .addDashboardProduct import addDashboardProduct
 
+    from .editDashboardCategory import editDashboardCategory
+
     from .search import search
 
     from .logout import logout
@@ -89,6 +91,8 @@ def createApp():
     app.register_blueprint(dashboardCategory,url_prefix='/dashboard/dashboardCategory') # Register blueprint to access /dashboard/dashboardCategory route of the website
 
     app.register_blueprint(addDashboardCategory,url_prefix='/dashboard/dashboardCategory/addDashboardCategory') # Register blueprint to access /dashboard/dashboardCategory/addDashboardCategory route of the website
+
+    app.register_blueprint(editDashboardCategory,url_prefix='/dashboard/dashboardCategory/editDashboardCategory') # Register blueprint to access /dashboard/editDashboardCategory route of the website
 
     app.register_blueprint(dashboardProduct,url_prefix='/dashboard/dashboardProduct') # Register blueprint to access /dashboard/dashboardProduct route of the website
 

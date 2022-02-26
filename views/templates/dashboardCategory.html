@@ -27,7 +27,7 @@
     <div class="categories-parent">
         {% for category in categories %}
             <div class="category-div">
-                <input type="text" name="category-name" placeholder="Enter the Category Name" value="{{category.categoryName}}" class="category-name-input">
+                <input type="text" name="category-name" placeholder="Enter the Category Name" value="{{category.categoryName}}" id="{{category.categoryId}}-input" class="category-name-input">
                 <a class="{{category.categoryId}} update-name-btn">Update Category</a>
                 <img src="{{ url_for('static', filename='img/cancel.png') }}" class="{{category.categoryId}} delete-category-btn">
             </div>

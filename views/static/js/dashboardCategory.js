@@ -110,7 +110,7 @@ document.getElementById('add-category-btn').addEventListener('click',()=>{
         if (!responseJson){
             return; // Retuning if some error came
         }
-        
+
         try{
             showCategory(responseJson.categoryName,responseJson.categoryId); // Appending child in parent Element
         }
@@ -131,7 +131,7 @@ function showCategory(categoryName,categoryId){
         categoriesParentDiv.classList.remove('no-category'); // Removing no-category to make it a non-empty category
         categoriesParentDiv.innerHTML = `
             <div class="category-div">
-                <input type="text" name="category-name" placeholder="Enter the Category Name" value="${categoryName}" class="category-name-input">
+                <input type="text" name="category-name" placeholder="Enter the Category Name" value="${categoryName}" id="${categoryId}-input" class="category-name-input">
                 <a class="${categoryId} update-name-btn">Update Category</a>
                 <img src="http://127.0.0.1:5000/static/img/cancel.png" class="${categoryId} delete-category-btn">
             </div>
@@ -143,7 +143,7 @@ function showCategory(categoryName,categoryId){
     categoryDiv.className = 'category-div'; // Adding class to the div
     categoryDiv.innerHTML = `
         <div class="category-div">
-            <input type="text" name="category-name" placeholder="Enter the Category Name" value="${categoryName}" class="category-name-input">
+            <input type="text" name="category-name" placeholder="Enter the Category Name" value="${categoryName}" id="${categoryId}-input" class="category-name-input">
             <a class="${categoryId} update-name-btn">Update Category</a>
             <img src="http://127.0.0.1:5000/static/img/cancel.png" class="${categoryId} delete-category-btn">
         </div>

@@ -145,6 +145,7 @@
           justify-content: center;
   padding: 1.5vw 3vw;
   background-color: #ff5858;
+  cursor: pointer;
 }
 
 /* From here we will start designing modal */
