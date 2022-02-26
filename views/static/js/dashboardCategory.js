@@ -1,19 +1,3 @@
-// let addCategoryBtn = document.getElementById('add-category-btn');
-// let loader = document.getElementById('loader');
-
-// addCategoryBtn.addEventListener('click',()=>{
-    // Changing Classes to add effect
-    // loader.classList.add('loader-active');
-    // loader.classList.remove('hide-loader');
-    // document.body.style.overflowY = 'hidden'; // Removes scrollbar
-
-//     setTimeout(() => {
-        // loader.classList.remove('loader-active');
-        // loader.classList.add('hide-loader');
-        // document.body.style.overflowY = 'initial'; // Adding scrollbar
-//     }, 2000);
-// });
-
 // This function will send a post request to the specified through which we will add a category in database
 async function addCategory(data){
 

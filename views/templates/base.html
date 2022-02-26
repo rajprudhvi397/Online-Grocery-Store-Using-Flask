@@ -125,27 +125,29 @@
         <h3 class="message-text" id="success-text"></h3>
     </div>
 
-    <!-- HTML for loader -->
-    <div class="loader-div">
-        <div class="loader hide-loader" id="loader">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
 
     {% block body %}
 
     {% endblock body %}
+
+        <!-- HTML for loader -->
+        <div class="loader-div">
+            <div class="loader hide-loader" id="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
 </body>
 
 <script src="{{ url_for('static', filename='js/responsive-navigation-bar.js') }}"></script>
