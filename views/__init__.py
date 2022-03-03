@@ -11,13 +11,25 @@ from flask_login import LoginManager # Importing Class LoginManager to manage Lo
 
 db = SQLAlchemy() # Creating Database Instance
 DATABASENAME = 'database.db' # This is the name of the database that the website will be using
+app = Flask(__name__) # Initializing Flask Module
+# UPLOAD_FOLDER = path.join(path.dirname(path.realpath(__file__)), 'static\\uploads') # Making variable for storing path of uploads folder
+UPLOAD_FOLDER = path.join(path.dirname(path.realpath(__file__)), 'uploads') # Making variable for storing path of uploads folder
+# UPLOAD_FOLDER = 'static/uploads/'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.config['SECRET_KEY'] = 'sjdflksajflksajfsajflksajl' # Setting up the secret key for the application
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # ADD This line to remove warnings
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DATABASENAME}'
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+
+def allow_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 def createApp():
     ''' This function will create the app '''
-    app = Flask(__name__) # Initializing Flask Module
-    app.config['SECRET_KEY'] = 'sjdflksajflksajfsajflksajl' # Setting up the secret key for the application
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # ADD This line to remove warnings
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DATABASENAME}'
     db.init_app(app) # Adding App in Database
 
     from .home import home # Importing home from home.py which will help us to adress the '/' route of the website

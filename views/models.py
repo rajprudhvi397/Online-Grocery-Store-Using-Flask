@@ -37,6 +37,8 @@ class Product(db.Model):
     productImageName = db.Column(db.String(10000),nullable=False)
     productPrice = db.Column(db.String(100000),nullable=False)
     categoryId = db.Column(db.String(10000),nullable=False) # This will be the Id of the category of which the product is
+    categoryName = db.Column(db.String(1000),nullable=False)
+    categoryURLName = db.Column(db.String(1000),nullable=False)
 
 class Cart(db.Model):
     ''' This model will store all the items of cart of the website '''

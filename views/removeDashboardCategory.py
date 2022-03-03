@@ -1,4 +1,4 @@
-from flask import Blueprint,Response,request,make_response,jsonify # Importing Blueprint to handle routes related to removeDashboardCategory page
+from flask import Blueprint,request,make_response,jsonify # Importing Blueprint to handle routes related to removeDashboardCategory page
 from . import db # Importing database
 from .models import Category # Importing Category from models.py
 
@@ -22,14 +22,12 @@ def renderRemoveDashboardCategoryPage():
         } # Creating response Data
 
         responseJson = make_response(jsonify(responseData),200) # Making a JSON response with status code 200
-        # return Response("'status':'ok'", status=200, mimetype='application/json') # Returning response
         return responseJson # Returning response
 
     except Exception as e:
-        # responseData = {
-        #     'error': e
-        # } # Making a response data dictionary
+        responseData = {
+            'error': e
+        } # Making a response data dictionary
 
-        # responseJson = make_response(jsonify(responseData),500) # Making a JSON response with status code 200
+        responseJson = make_response(jsonify(responseData),500) # Making a JSON response with status code 200
         print(e)
-        return Response("'status':'error'", status=500, mimetype='application/json') # Returning response

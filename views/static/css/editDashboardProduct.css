@@ -12,9 +12,9 @@
 
 .form-parent {
   width: 60vw;
-  height: 60vh;
-  margin-left: auto;
-  margin-right: auto;
+  height: inherit;
+  margin: 5vh auto;
+  padding: 2vh 2vw;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;

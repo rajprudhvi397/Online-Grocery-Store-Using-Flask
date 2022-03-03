@@ -13,7 +13,7 @@
 </h1>
 
 <div class="form-parent">
-<form class="form" method="post">
+<form class="form" method="post" enctype="multipart/form-data">
     <div class="input-group">
         <label for="form-input-1" class="form-label">Profile Image</label>
         <input type="file" name="profileImage" id="form-input-1" class="form-input-text-password">
@@ -27,6 +27,16 @@
     <div class="input-group">
         <label for="form-input-3" class="form-label">Product price</label>
         <input type="number" name="productPrice" placeholder="Enter your Product price here" id="form-input-3" class="form-input-text-password">
+    </div>
+
+    <div class="input-group">
+        <label for="form-input-4" class="form-label">Product Category</label>
+        <select id='form-input-4' name='categoryIdOfProduct' class="form-input-text-password">
+            <option value='choose' selected>Choose a category for the product</option>
+            {% for category in categories %}
+                <option value="{{category.categoryId}}">{{category.categoryName}}</option>
+            {% endfor %}
+        </select>
     </div>
 
     <button type="submit" class="form-submit-button">Add Product</button>
